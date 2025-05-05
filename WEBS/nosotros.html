@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroBurgers | Sobre Nosotros</title>
+    <meta name="description" content="Conoce la historia de AstroBurgers, nuestra misión y visión. Descubre por qué nuestras hamburguesas son de otro planeta." />
+    <meta name="keywords" content="hamburguesas espaciales, historia AstroBurgers, concepto astronómico, fast food premium" />
+    <meta name="author" content="AstroBurgers" />
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="shortcut icon" href="../IMG/LOGO/logo.jpg" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Estrellas de fondo -->
+    <div class="stars"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="../index.html" class="logo">AstroBurgers</a>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="../index.html" class="nav-link">Inicio</a>
+          <a href="#" class="nav-link active">Sobre Nosotros</a>
+          <a href="../WEBS/contacto.html" class="nav-link">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">Nosotros</h1>
+      </div>
+      
+      <!-- Planetas decorativos -->
+      <div class="planet planet-1"></div>
+      <div class="planet planet-2"></div>
+    </section>
+    
+    <!-- Description -->
+    <section class="description">
+      <div class="container">
+        <div class="glass-card">
+          <h2 class="section-title">Nuestra Historia</h2>
+          <p>
+            AstroBurgers nació en 2018 de la pasión de dos amigos por la gastronomía y la astronomía. 
+            Decidimos combinar estos dos mundos para crear hamburguesas únicas que transporten a nuestros 
+            clientes a una experiencia culinaria intergaláctica. Cada hamburguesa está cuidadosamente 
+            diseñada para representar un elemento del cosmos, desde nebulosas coloridas hasta potentes 
+            agujeros negros.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Segunda descripción -->
+    <section class="description">
+      <div class="container">
+        <div class="glass-card">
+          <h2 class="section-title">Nuestra Misión</h2>
+          <p>
+            En AstroBurgers nos comprometemos a utilizar solo ingredientes de la más alta calidad, 
+            apoyando a productores locales y garantizando frescura en cada mordisco. Nuestro objetivo 
+            es ofrecer la mejor experiencia gastronómica con un toque de diversión espacial, creando 
+            un ambiente donde los amantes de la comida y del espacio puedan sentirse como en casa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección con foto -->
+    <section class="menu-section">
+      <div class="container">
+        <h3 class="section-title">Nuestro Equipo</h3>
+        
+        <div class="menu-grid">
+          <div class="burger-card">
+            <div class="burger-img-container">
+              <div class="img-overlay"></div>
+              <img src="../IMG/comida/banner.png" alt="Equipo AstroBurgers">
+            </div>
+            <div class="burger-content">
+              <h4 class="burger-title" style="text-align: center;">Exploradores Culinarios</h4>
+              <p class="burger-desc" style="text-align: center;">
+                Detrás de cada hamburguesa hay un equipo de exploradores culinarios apasionados 
+                por crear experiencias gastronómicas extraordinarias. Desde nuestros chefs hasta 
+                nuestro personal de atención al cliente, todos compartimos la misma pasión por 
+                la excelencia y el servicio estelar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">AstroBurgers</a>
+        <div class="social-links">
+          <a href="https://www.instagram.com/soyfacuh/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.linkedin.com/in/facundocenturion/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> linkedin</a>
+          <a href="https://x.com/soyfacuh" target="_blank" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+        <p>&copy; 2025 AstroBurgers. Todos los derechos reservados. Viaje intergaláctico de sabor.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- JavaScript para la navegación responsive -->
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+        });
+      }
+    </script>
+  </body>
+</html>

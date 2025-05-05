@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AstroBurgers | Hamburguesas galácticas, sabor de otro planeta</title>
+    <meta name="description" content="Prueba las hamburguesas más deliciosas de la galaxia. Ingredientes frescos, sabores únicos. ¡Ordénalas ahora y disfruta la experiencia AstroBurgers!" />
+    <meta name="keywords" content="hamburguesas espaciales, hamburguesas temáticas, fast food premium, mejor hamburguesa delivery" />
+    <meta name="author" content="AstroBurgers" />
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="shortcut icon" href="./IMG/LOGO/logo.jpg" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Estrellas de fondo -->
+    <div class="stars"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">AstroBurgers</a>
+        <button class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#" class="nav-link active">Inicio</a>
+          <a href="./WEBS/nosotros.html" class="nav-link">Sobre Nosotros</a>
+          <a href="./WEBS/contacto.html" class="nav-link">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">AstroBurgers</h1>
+        <h2 class="hero-subtitle">Hamburguesas de otro planeta</h2>
+        <button class="cta-button">
+          ¡Pide tu hamburguesa ahora!
+        </button>
+      </div>
+      
+      <!-- Planetas decorativos -->
+      <div class="planet planet-1"></div>
+      <div class="planet planet-2"></div>
+    </section>
+    
+    <!-- Description -->
+    <section class="description">
+      <div class="container">
+        <div class="glass-card">
+          <p>
+            En AstroBurgers tenemos las hamburguesas más deliciosas de la galaxia. 
+            Cada una está preparada con ingredientes frescos y una combinación 
+            única de sabores, ¡perfecta para cualquier astronauta con hambre de aventura!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+      <div class="container">
+        <h3 class="section-title">Nuestro Menú</h3>
+        
+        <div class="menu-grid">
+          <!-- Hamburguesa 1 -->
+          <div class="burger-card">
+            <div class="burger-img-container">
+              <div class="img-overlay"></div>
+              <img src="./IMG/COMIDA/1.png" alt="Hamburguesa Estelar">
+            </div>
+            <div class="burger-content">
+              <h4 class="burger-title">Hamburguesa Estelar</h4>
+              <p class="burger-desc">
+                La hamburguesa más deliciosa de la galaxia, con carne de res, 
+                queso cheddar y nuestra salsa especial galáctica.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Hamburguesa 2 -->
+          <div class="burger-card">
+            <div class="burger-img-container">
+              <div class="img-overlay"></div>
+              <img src="./IMG/COMIDA/2.png" alt="Hamburguesa Cometa">
+            </div>
+            <div class="burger-content">
+              <h4 class="burger-title">Hamburguesa Cometa</h4>
+              <p class="burger-desc">
+                Una mezcla única de pollo a la parrilla, aguacate y 
+                mayonesa cósmica que te hará viajar a las estrellas.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Hamburguesa 3 -->
+          <div class="burger-card">
+            <div class="burger-img-container">
+              <div class="img-overlay"></div>
+              <img src="./IMG/COMIDA/3.png" alt="Hamburguesa Lunar">
+            </div>
+            <div class="burger-content">
+              <h4 class="burger-title">Hamburguesa Lunar</h4>
+              <p class="burger-desc">
+                Con carne de cerdo, cebolla caramelizada y queso brie, 
+                una verdadera experiencia lunar en cada mordisco.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="index.html" class="footer-logo">AstroBurgers</a>
+        <div class="social-links">
+          <a href="https://www.instagram.com/soyfacuh/" target="_blank" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.linkedin.com/in/facundocenturion/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i> linkedin</a>
+          <a href="https://x.com/soyfacuh" target="_blank" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+        </div>
+        <p>&copy; 2025 AstroBurgers. Todos los derechos reservados. Viaje intergaláctico de sabor.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- JavaScript para la navegación responsive -->
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+        });
+      }
+    </script>
+  </body>
+</html>
